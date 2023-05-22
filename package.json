@@ -1,8 +1,8 @@
 {
-	"name": "js-alghorithms-codeevolution",
+	"name": "js-alghorithms",
 	"version": "1.0.0",
 	"main": "index.js",
-  "type": "module",
+	"type": "module",
 	"devDependencies": {
 		"nodemon": "^2.0.22",
 		"ts-node": "^10.9.1",
@@ -14,5 +14,8 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"description": ""
+	"description": "",
+	"dependencies": {
+		"@types/node": "^20.1.1"
+	}
 }
