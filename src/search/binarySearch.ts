@@ -1,28 +1,23 @@
 function binarySearch(arr: number[], target: number) {
 	let left = 0
-	let right = arr.length
+	let right = arr.length - 1
 
-	while (true) {
-		let middle = Math.floor((right + left) / 2)
+	while (left <= right) {
+		const middle = Math.floor((right + left) / 2)
 
 		if (arr[middle] === target) {
 			return middle
 		}
 
 		if (arr[middle] < target) {
-			if (left === middle) {
-				return -1
-			}
 			left = middle + 1
 		}
 
 		if (arr[middle] > target) {
-			if (right === middle) {
-				return -1
-			}
 			right = middle - 1
 		}
 	}
+  return -1
 }
 
 console.log(binarySearch([1, 2, 3, 4, 5, 6, 7], 10))

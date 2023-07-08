@@ -55,5 +55,7 @@ graph.addVertex("C")
 graph.addEdge("A", "B")
 graph.addEdge("B", "C")
 // graph.removeEdge("B", "C")
-graph.removeVertex("B")
+// graph.removeVertex("B")
 graph.display()
+
+console.log(graph)
